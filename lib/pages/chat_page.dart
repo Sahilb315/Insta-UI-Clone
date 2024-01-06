@@ -1,0 +1,99 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:insta_ui_clone/data/lists.dart';
+
+class ChatPage extends StatefulWidget {
+  const ChatPage({Key? key}) : super(key: key);
+
+  @override
+  State<ChatPage> createState() => _ChatPageState();
+}
+
+class _ChatPageState extends State<ChatPage> {
+  final searchController = TextEditingController();
+  List<String> _foundUsers = [];
+
+  @override
+  void initState() {
+    _foundUsers = storyNames;
+    super.initState();
+  }
+
+  void _searchFilter(String enteredWord) {
+    List<String> results = [];
+    if (enteredWord.isEmpty) {
+      results = storyNames;
+    } else {
+      results = storyNames
+          .where((element) =>
+              element.toLowerCase().contains(enteredWord.toLowerCase()))
+          .toList();
+    }
+
+    setState(() {
+      _foundUsers = results;
+    });
+  }
+
+  @override 
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(storyNames.first),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
+                height: 40,
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade400,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10.0),
+                  child: TextField(
+                    cursorColor: Colors.black,
+                    controller: searchController,
+                    decoration: const InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Search',
+                      icon: Icon(Icons.search),
+                      // suffixIcon: Icon(Icons.search)
+                    ),
+                    onChanged: (value) => _searchFilter(value),
+                    // onSubmitted: (value) {
+                    //   setState(() {
+                    //     storyNames.contains(value);
+                    //   });
+                    // },
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: _foundUsers.length,
+                itemBuilder: (_, index) {
+                  return ListTile(
+                    leading: CircleAvatar(
+                      foregroundImage: NetworkImage(
+                        profileImages[index],
+                      ),
+                    ),
+                    title: Text(_foundUsers[index]),
+                    subtitle: Text(postsNames[index]),
+                    trailing: const Icon(CupertinoIcons.camera),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
