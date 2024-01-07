@@ -98,3 +98,26 @@ List storyImages = [
     "https://img.freepik.com/free-photo/parent-spending-time-with-baby_23-2149259999.jpg?t=st=1704553343~exp=1704553943~hmac=4d738038347b2c10d7263cf70b4802f79d94c986e29f9904793614a93c79561a.webp",
     "https://img.freepik.com/free-photo/medium-shot-smiley-senior-couple-outdoors_23-2149390989.jpg?t=st=1704553343~exp=1704553943~hmac=7acbd46311a820ef9c64453a612de7c7fcef8e8d82efd7e4dfb13b9e897f4498.webp"
   ];
+
+  List<String> exploreImages = [
+    "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1566275529824-cca6d008f3da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvdG98ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1554080353-a576cf803bda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG98ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGhvdG98ZW58MHx8MHx8fDA%3D",
+    "https://plus.unsplash.com/premium_photo-1675919641915-49f30f58223f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGhvdG98ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1495231916356-a86217efff12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGhvdG98ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1533536201350-93ebe24101f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBob3RvfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1523032217284-d9e49d6c5f04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBob3RvfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1523032217284-d9e49d6c5f04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBob3RvfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1533662635785-9050eeb7a9be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBob3RvfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1530510004231-720218d936da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBob3RvfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1609607847926-da4702f01fef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBob3RvfGVufDB8fDB8fHww",
+    "https://plus.unsplash.com/premium_photo-1674435577971-8c8d50089450?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG98ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1554844453-7ea2a562a6c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww",
+    "https://plus.unsplash.com/premium_photo-1666265384842-31bdda25f026?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww",
+    "https://media.istockphoto.com/id/1801876632/photo/cricket-sports.webp?b=1&s=170667a&w=0&k=20&c=3iH0jVLOgLV8w49ZZ5hThCGpWljQK-WCsPYbzqQUR50=",
+    "https://media.istockphoto.com/id/1253815263/photo/blue-cheeked-bee-eater.webp?b=1&s=170667a&w=0&k=20&c=rD8jX4XtP-n7OJM5jwAXGmV2RcksLKvvdmLFu4Vbqy4=",
+    "https://media.istockphoto.com/id/484587248/photo/concept-for-spend-on-electricity.webp?b=1&s=170667a&w=0&k=20&c=msrdpjdZZ-jyYVbQdb03pecH_bDe038vVRXLMnbj0v0=",
+    "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
+    "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fHww",
+  ];

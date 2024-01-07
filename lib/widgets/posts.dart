@@ -107,7 +107,7 @@ class _PostsState extends State<Posts> {
                             context: context,
                             builder: (context) {
                               return Container(
-                                height: 300,
+                                height: 250,
                                 child: Column(
                                   children: [
                                     Padding(
