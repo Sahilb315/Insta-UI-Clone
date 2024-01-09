@@ -1,6 +1,12 @@
+// ignore_for_file: unused_element
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/box_borders/gradient_box_border.dart';
+import 'package:insta_ui_clone/pages/more_stories.dart';
+import 'package:story_view/story_view.dart';
+
+final storyController = StoryController();
 
 Widget storyView(List image, List names) {
   return SizedBox(
@@ -41,7 +47,7 @@ Widget storyView(List image, List names) {
                               radius: 38,
                             ),
                           ),
-                           Positioned(
+                          Positioned(
                             left: 50,
                             top: 58,
                             child: Icon(
@@ -63,25 +69,33 @@ Widget storyView(List image, List names) {
                 padding: const EdgeInsets.only(left: 8.0),
                 child: Column(
                   children: [
-                    Container(
-                      // width: 40,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: GradientBoxBorder(
-                          gradient: LinearGradient(
-                            colors: [
-                              Colors.purple,
-                              Colors.pink,
-                              Colors.yellow,
-                            ],
-                          ),
-                          width: 3,
+                    InkWell(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const MoreStories(),
                         ),
                       ),
-                      child: CircleAvatar(
-                        // backgroundColor: Colors.transparent,
-                        foregroundImage: NetworkImage(image[index]),
-                        radius: 38,
+                      child: Container(
+                        // width: 40,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: GradientBoxBorder(
+                            gradient: LinearGradient(
+                              colors: [
+                                Colors.purple,
+                                Colors.pink,
+                                Colors.yellow,
+                              ],
+                            ),
+                            width: 3,
+                          ),
+                        ),
+                        child: CircleAvatar(
+                          // backgroundColor: Colors.transparent,
+                          foregroundImage: NetworkImage(image[index]),
+                          radius: 38,
+                        ),
                       ),
                     ),
                     const SizedBox(
