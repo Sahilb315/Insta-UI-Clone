@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:insta_ui_clone/pages/home.page.dart';
+import 'package:insta_ui_clone/provider/navigation_page_provider.dart';
+import 'package:insta_ui_clone/provider/post_provider.dart';
+import 'package:insta_ui_clone/provider/search_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() async {
+  // WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
-    const MyApp(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => SearchProvider()),
+        ChangeNotifierProvider(create: (_) => NavigationPageProvider()),
+        ChangeNotifierProvider(create: (_) => PostsProvider()),
+      ],
+      child: const MyApp(),
+    ),
   );
 }
 
