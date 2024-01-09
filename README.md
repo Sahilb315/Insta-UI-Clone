@@ -1,7 +1,6 @@
 # insta_ui_clone
 
-A new Flutter project.
-
+Instagram UI Clone made with Flutter and used Provider for State Management. A great experience building this app. 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
